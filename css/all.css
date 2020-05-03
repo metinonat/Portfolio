@@ -438,16 +438,23 @@ h2.type{
 }
 .modal-content h1 {
 	color: black;
-	margin-bottom: 25px;
+	font-weight: bold;
+	margin: 15px 0 30px;
 }
 .modal-content img {
 	margin: auto;
 	margin-bottom: 25px;
 	max-width: 65%;
 }
-.modal-content p {
+.modal-context {
 	color: black;
 	text-align: center;
+}
+.modal-link {
+	/*color: rgb(131, 126, 126);*/
+	margin-top: 15px;
+	vertical-align: bottom;
+	text-align: right;
 }
 .close {
 	color: black;
@@ -493,40 +500,6 @@ h2.type{
 	display: block;
 	text-align: center;
 	color: #929c95;
-}
-
-/*******************************************
-******************POPUP PROJECTS**********************
- *******************************************/
-.popup_portfolio{
-	max-width: 1132px;
-}
-.popup_portfolio h3{
-	padding-top:26px;
-	font-family: 'Ubuntu Condensed', sans-serif;
-	font-weight:bold;
-	color: #63666a;
-	font-size: 18px;
-	line-height: 18px;
-	text-transform: uppercase;
-}
-.popup_portfolio time{
-	font-family: 'Ubuntu Condensed', sans-serif;
-	color: #abacaf;
-	font-size: 12px;
-	line-height: 12px;
-	text-transform: uppercase;
-}
-.popup_portfolio p{
-	padding: 17px 0 8px;
-	color: #808286;
-	font-size: 16px;
-	line-height: 30px;
-}
-.popup_portfolio img {
-	width: 100%;
-	height: auto;
-	border-radius: 8px;
 }
 /*******************************************
 ******************ICONS**********************
