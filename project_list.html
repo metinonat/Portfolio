@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160255152-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-160255152-1');
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="css/all.css" type='text/css'/>
+	<link rel="stylesheet" href="css/screen.css" />
+
+    <title>Metin Onat Çukur | Projects</title>
+</head>
+<body>
+    <div id="wrapper">
+		<div class="wrapper-holder">
+			<header id="menu">
+				<a id="menu_trigger" onclick="openMenu()" href="#">menu</a>
+				<nav id="nav">
+						<ul>
+							<li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+							<li><a href="index.html#about">About</a></li>
+							<li><a href="">Projects</a></li>
+							<li><a href="cv.pdf">CV</a></li>
+							<li><a href="contact.html"> Contact</a></li>
+						</ul>
+					</nav>
+			</header>
+        </div>
+        <div class="wrapper-holder background">
+            <section id='projects'>
+                <h2>Projects</h2>
+				<ul id="buttonContainer" class="sub_nav">
+					<li class="btn active" onclick="filterSelection('all',this)"><a>All works</a></li>
+					<li class="btn" onclick="filterSelection('web', this)"><a>Web</a></li>
+					<li class="btn" onclick="filterSelection('mobile-app', this)"><a>Mobile Application</a></li>
+					<li class="btn" onclick="filterSelection('game', this)"><a>Mobile Game</a></li>
+				</ul>
+				<ul id="container" class="item-list">
+					<li class="item web" >
+						<div class="card ">
+							<img src="images/default_web.png"  onclick="openModal('portfolio')" alt="personal portfolio web site" />
+							<div class="content">
+								<h4>Personal Portfolio</h4>
+								<p>Static website developed with HTML, CSS, and Javascript.</p>
+								<a class="popup" onclick="openModal('portfolio')">More...</a>
+							</div>
+						</div>
+					</li> 
+					<li class="item web mobile-app game" >
+						<div class="card ">
+							<img src="images/default.png"  alt="more projects" />
+							<div class="content">
+								<h4> More Projects </h4>
+								<p>Soon I will upload more projects, meanwhile you can check my full CV.</p>
+								<a class="cv" href="cv.pdf">View my full CV..</a>
+							</div>
+						</div>
+					</li> 
+				</ul>
+            </section>
+        </div>
+        <footer id="footer">
+			<div class="footer-content">
+				<ul class="social">
+					<!-- <li class="email"><a href="#">Email</a></li> -->
+					<li class="instagram"><a class='btn' href="https://www.instagram.com/metinonat_/"><i class='fab fa-instagram fa-2x'></i></a></li>
+					<li class="linkedin"><a class='btn' href="https://www.linkedin.com/in/metinonatcukur"><i class='fab fa-linkedin aria-hidden="true" fa-2x'></i></a></li>
+					<li class="github"><a class='btn' href="https://www.github.com/metinonat"><i class='fab fa-github-square fa-2x'></i></a></li>
+                    <li class="hackerrank"><a class='btn' href="https://www.hackerrank.com/metinonat"><i class='fab fa-hackerrank fa-2x'></i></a></li>
+				</ul>
+				<p class="copy">Copyright 2020 Metin Onat Çukur. All rights reserved.</p>
+			</div>
+		</footer>	
+	</div>
+	<div id="projectModal" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="closeModal()">&times</span>
+			<h1>Personal Portfolio</h1>
+			<img src="images/default_web.png"  alt="personal portfolio web site" />
+			<p class="modal-context">Static personal portfolio website developed with HTML, CSS, and Javascript.</p>
+			<a class="modal-link"></a>
+		</div>
+	</div>
+	
+    <button onclick="gotoTop()" id="topButton" title="Go to Top"><i class='fas fa-arrow-circle-up'></i></button>
+
+    <script src="js/homepage.js"></script>
+</body>
+</html>

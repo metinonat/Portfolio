@@ -1,0 +1,90 @@
+@media screen and (max-width : 1023px) {
+    .skill_list{max-width: 720px;white-space: nowrap;}
+    .skill_list li{
+        display: inline;
+    }
+}
+@media screen and (max-width : 850px) {
+    #menu_trigger {
+        right: 30px;
+        top: 25px;
+        display: block;
+    }
+    #menu_trigger:active {
+        right: 30px;
+        top: 25px;
+        display: block;
+    }
+    nav {
+        display: none;
+        margin: 0 auto;
+    }
+    nav ul li {
+        float: none;
+        display: table-row;
+        padding: 0;
+    }
+    nav ul a {
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        line-height: auto;
+        padding: 0;
+        text-transform: uppercase;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        font-weight: normal;
+    }
+    nav ul a:hover {
+        border: none;
+        background-color: initial;
+        color: #fff;
+        text-decoration: none;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    .icon {position: relative;}
+    .icon .btn::before {position: relative;}
+}
+@media screen and (max-width: 767px) {
+    #about {flex-direction: column;}
+    #overview-info-box {flex-direction: column;}
+    .images_holder {
+        margin: 0 auto 30px;
+    }
+    .images_holder img {justify-content: center;}
+} 
+@media screen and (min-width: 730px) {
+    .skill_list {
+        justify-content: center;
+        display: flex;
+    }
+} 
+@media screen and (max-width: 660px) {
+    .date{
+        width: auto;
+        float: none;
+        display: block;
+    }
+    .tools_list, .box_info h3 {text-align: center;}
+    .tools_list li {margin: 0 10px 15px;}
+    .info, .content p {text-indent: 20px;}
+    .modal-content p {text-align: justify;}
+} 
+@media screen and (max-width: 546px) {
+    .item-list li {margin: 0 0 25px;}
+} 
+@media screen and (min-height: 600px) and (max-width: 450px) {
+    #down-arrow {display: none;}
+    .logo {margin-top: 100px;}
+    h2.type {margin-bottom: 50px;}
+}
+@media screen and (max-height: 600px) and (max-width: 450px) {
+    #down-arrow {display: none;}
+    .logo {margin-top: 50px;}
+    h2.type {margin-bottom: 25px;}
+}
+@media screen and (max-width: 374px) {
+    .sub_nav {display: grid;}
+}
